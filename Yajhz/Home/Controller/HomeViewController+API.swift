@@ -72,7 +72,7 @@ extension HomeViewController{
             case .success(let data):
                 if data?.success == true {
                     self?.makeOkAlert(title: "", SubTitle: data?.message ?? "", Image: UIImage())
-                    self?.homeTable.reloadData()
+                    self?.getHomePopular()
                 }else{
                 }
             case .failure(let error):

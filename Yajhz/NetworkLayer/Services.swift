@@ -21,7 +21,12 @@ class NetworkCall {
     }
     
     func homePopular(view:UIView,completion :@escaping (Result<HomePopular?,Error>) -> Void) {
-        Request.request(url: URLs.Instance.HomePopular(),method: .get, Controller: view, parameters: nil, encoding: URLEncoding.default, headers:nil, callBack:completion)
+        
+        let header: HTTPHeaders = [
+            "Authorization": "Bearer \(UserDefaults.standard.string(forKey: "userToken") ?? "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmNjMDFkY2QwYmYwYTg3MzU4YWQzMjFmYTI1YjZmNGFjOWM4ODcxNzVkNjQ4YTkwYzkwZGMxOTEzOTg4YjI2NjY3ODI1NTNkYjZkMDIxMzIiLCJpYXQiOjE3MDQ2NDg3NDguOTA3NDkzLCJuYmYiOjE3MDQ2NDg3NDguOTA3NDk5LCJleHAiOjE3MzYyNzExNDguOTAxNTgzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Z_DPqryKcvsq1Op47hMQUIxqlA7GA8TiZXw2dgt_1FyF7XoUbvZz8OdTIbDXTzwWVHebaFrqALZRqgLBg6i0je4VZSroH7aNX2qYT6nEN8pMZaik-or2fRyShB5-3dFZRw5DPtfFmWFdfiZG1e4CtT27Q0rus9S16llEn6UEr-wmkHGclfMw-2POKcQOzPMm7zevynHrDWjF1C_HYtt1xC7wS9ekunqPkKSkOlX7kcweq7ex7wa_BBa7xinGEB3BDrdvz-g_nAt-UoXuIwShsmHFy-tpei5YJbkIi69tq0CWVaObrT5umATbEd0Z24LVr3f05O_XoHSz3vbNVvCgDjkcwfB35LXEuzjKldhCKzls01-C128tGgq4_10HP4QdtulWBZiFC7wkJqB5CuvD7rjEcbwcuZm63sjo4E5rrxeRN94qC074s3HwfDG4ApjrDmtGJ_UTE3sLy_2smO92gHVIV5iH_Vlk5TB_ij2bvChAOPNQkb4Jvg29p8fJuqZsaNvJIuwdrb80TXqDftbqYZQ3aZDoHb4nuN8Lfa61KC0vnvN4E6yLZvGlL06s11695hY-iqrhRgPsrb8EPijqcD5uli3YF2LYNX082gZ14kk3sGulngESZKVJQN79tW4CyvgNv3NAQO3NywDlMGHsxL8OX7MjSydt5O09m0SEcZ8")"
+        ]
+        
+        Request.request(url: URLs.Instance.HomePopular(),method: .get, Controller: view, parameters: nil, encoding: URLEncoding.default, headers:header, callBack:completion)
     }
     
     func userProfile(view:UIView,completion :@escaping (Result<UserProfile?,Error>) -> Void) {
@@ -42,7 +47,7 @@ class NetworkCall {
             "user_id":"116"
         ]
         
-        Request.postFormData(url: URLs.Instance.favourite(), params: parameters, headers: header, completion: completion)
+        Request.postFormData(vc: view, url: URLs.Instance.favourite(), params: parameters, headers: header, completion: completion)
     }
 }
 

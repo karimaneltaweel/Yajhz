@@ -32,7 +32,6 @@ extension HomeViewController:UITableViewDelegate, UITableViewDataSource{
                 favourite(productId: String(popularData?.data?[index].id ?? 0))
                 cell.popularCollection.reloadData()
             }
-            
             cell.popularCollection.reloadData()
             return cell
         default:
