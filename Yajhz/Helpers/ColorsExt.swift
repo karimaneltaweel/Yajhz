@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+extension UIColor{
+static var primaryGreenColor = UIColor(named: "primary-greenColor")
+static var YellowColor = UIColor(named: "Yellow-color")
+}

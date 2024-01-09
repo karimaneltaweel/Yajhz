@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.8.1)
+  - CDAlertView (0.11.0)
+  - Cosmos (23.0.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - CDAlertView
+  - Cosmos
+  - NVActivityIndicatorView
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - Alamofire
+    - CDAlertView
+    - Cosmos
+    - NVActivityIndicatorView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  CDAlertView: cd6624e857c85ad14560e2cd23d7eb25b983b590
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
+
+PODFILE CHECKSUM: ee68ca3c6d175d5b765392f87e584b42e8589d57
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h7a-9L-hI5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Medium.ttf">
+            <string>Cairo-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Delete Alert Controller-->
+        <scene sceneID="rDQ-3H-eqq">
+            <objects>
+                <viewController storyboardIdentifier="DeleteAlertController" modalPresentationStyle="overFullScreen" id="h7a-9L-hI5" customClass="DeleteAlertController" customModule="Waqaya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUt-Ni-7HK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-M1-f4w">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILD-8T-wqD">
+                                        <rect key="frame" x="24" y="353.66666666666669" width="345" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?, you want to delete item from favorites?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-Kj-JeZ">
+                                                <rect key="frame" x="20" y="20" width="305" height="60"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Medium" family="Cairo" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T8g-qB-uqJ">
+                                                <rect key="frame" x="20" y="95" width="305" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VW-fQ-VFY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="P4r-qN-TH0"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                                            <fontDescription key="titleFontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="Primary"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="exitPressed:" destination="h7a-9L-hI5" eventType="touchUpInside" id="aGK-XC-3ok"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxL-e7-UYA">
+                                                        <rect key="frame" x="156.66666666666663" y="0.0" width="148.33333333333337" height="40"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <color key="tintColor" name="FontColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Delete"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                                            <fontDescription key="titleFontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="deletePressed:" destination="h7a-9L-hI5" eventType="touchUpInside" id="QRg-c9-LIO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="M4p-Kj-JeZ" secondAttribute="trailing" constant="20" id="a2e-fB-Qdq"/>
+                                            <constraint firstAttribute="trailing" secondItem="T8g-qB-uqJ" secondAttribute="trailing" constant="20" id="awo-CQ-d4f"/>
+                                            <constraint firstItem="M4p-Kj-JeZ" firstAttribute="top" secondItem="ILD-8T-wqD" secondAttribute="top" constant="20" id="cHB-Tc-qAs"/>
+                                            <constraint firstItem="M4p-Kj-JeZ" firstAttribute="leading" secondItem="ILD-8T-wqD" secondAttribute="leading" constant="20" id="dIR-Q9-89A"/>
+                                            <constraint firstAttribute="bottom" secondItem="T8g-qB-uqJ" secondAttribute="bottom" constant="10" id="gUa-iI-zTM"/>
+                                            <constraint firstItem="T8g-qB-uqJ" firstAttribute="leading" secondItem="ILD-8T-wqD" secondAttribute="leading" constant="20" id="kSY-9g-suG"/>
+                                            <constraint firstItem="T8g-qB-uqJ" firstAttribute="top" secondItem="M4p-Kj-JeZ" secondAttribute="bottom" constant="15" id="mbF-aP-V8b"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="1" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.257749848" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ILD-8T-wqD" firstAttribute="centerY" secondItem="t8u-M1-f4w" secondAttribute="centerY" id="5Lm-Ir-y1K"/>
+                                    <constraint firstItem="ILD-8T-wqD" firstAttribute="leading" secondItem="t8u-M1-f4w" secondAttribute="leading" constant="24" id="USe-VJ-OSP"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILD-8T-wqD" secondAttribute="trailing" constant="24" id="XEc-2d-XmL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aTH-91-aSe"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t8u-M1-f4w" firstAttribute="top" secondItem="iUt-Ni-7HK" secondAttribute="top" id="647-dT-Ia2"/>
+                            <constraint firstAttribute="trailing" secondItem="t8u-M1-f4w" secondAttribute="trailing" id="EYw-77-bHE"/>
+                            <constraint firstItem="t8u-M1-f4w" firstAttribute="leading" secondItem="iUt-Ni-7HK" secondAttribute="leading" id="gJe-or-PUc"/>
+                            <constraint firstAttribute="bottom" secondItem="t8u-M1-f4w" secondAttribute="bottom" id="hft-ns-eFd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertMsg" destination="M4p-Kj-JeZ" id="6H8-q1-0o5"/>
+                        <outlet property="alretView" destination="ILD-8T-wqD" id="05o-9j-PPJ"/>
+                        <outlet property="deleteBtn" destination="gxL-e7-UYA" id="XUy-nU-5Iq"/>
+                        <outlet property="dismassView" destination="t8u-M1-f4w" id="F8N-of-K7W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCz-hE-k98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628.2442748091603" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="FontColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

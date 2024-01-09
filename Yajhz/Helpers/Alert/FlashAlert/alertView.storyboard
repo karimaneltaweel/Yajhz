@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PopVC-->
+        <scene sceneID="GTz-e0-ql2">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="HBf-ED-4Bu" customClass="PopVC" customModule="Popyup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQA-3s-d9E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ks0-Xw-sMf">
+                                <rect key="frame" x="69.5" y="418" width="275" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-jd-Nci">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="A2T-Hk-u3L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Z0p-jd-Nci" secondAttribute="bottom" id="Ika-h6-vdB"/>
+                                    <constraint firstItem="Z0p-jd-Nci" firstAttribute="top" secondItem="Ks0-Xw-sMf" secondAttribute="top" id="iQT-bX-Dfo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z0p-jd-Nci" secondAttribute="trailing" id="ijC-ez-GBB"/>
+                                    <constraint firstItem="Z0p-jd-Nci" firstAttribute="leading" secondItem="Ks0-Xw-sMf" secondAttribute="leading" id="twG-fS-eL9"/>
+                                    <constraint firstAttribute="width" constant="275" id="wSZ-8B-zv8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ks0-Xw-sMf" firstAttribute="centerY" secondItem="JQA-3s-d9E" secondAttribute="centerY" id="7J9-dk-ZeF"/>
+                            <constraint firstItem="Ks0-Xw-sMf" firstAttribute="centerX" secondItem="JQA-3s-d9E" secondAttribute="centerX" id="Hgp-Hz-KHT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gwq-LK-ht6"/>
+                    </view>
+                    <connections>
+                        <outlet property="PopView" destination="Ks0-Xw-sMf" id="v0R-4O-Nzz"/>
+                        <outlet property="bodyLabel" destination="Z0p-jd-Nci" id="0WP-Po-OOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRb-sc-7Eq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+</document>
