@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
