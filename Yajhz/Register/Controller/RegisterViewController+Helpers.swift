@@ -35,7 +35,7 @@ extension RegisterViewController{
             self.makeOkAlert(title: "", SubTitle: "lease enter your confirm password", Image: UIImage())
             return
         }
-        phoneLimit()
+        nameLimit()
 
     }
     
@@ -44,12 +44,19 @@ extension RegisterViewController{
             makeOkAlert(title: "Phone Number must be 11 numbers", SubTitle: "", Image: UIImage())
             return
         }
-        nameLimit()
+        passwordLimit()
     }
     
     func nameLimit(){
-        guard nameTF.text?.count ?? 0 < 8 else {
-            makeOkAlert(title: "user name must be at least 8 characters", SubTitle: "", Image: UIImage())
+        guard nameTF.text?.count ?? 0 >= 14 else {
+            makeOkAlert(title: "user name must be at least q4 characters", SubTitle: "", Image: UIImage())
+            return
+        }
+        phoneLimit()
+    }
+    func passwordLimit(){
+        guard passwordTF.text?.count ?? 0 >= 8 else {
+            makeOkAlert(title: "password must be at least 8 characters", SubTitle: "", Image: UIImage())
             return
         }
         checkPassword()
