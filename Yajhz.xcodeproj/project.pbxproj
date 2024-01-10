@@ -302,9 +302,9 @@
 		DDE0A3712B4C7EF300F07F14 /* Yajhz */ = {
 			isa = PBXGroup;
 			children = (
-				DD0BE4F72B4DD16300C31E0C /* NetworkLayer */,
 				DDE0A3742B4C7EF300F07F14 /* SceneDelegate.swift */,
 				DDE0A3722B4C7EF300F07F14 /* AppDelegate.swift */,
+				DD0BE4F72B4DD16300C31E0C /* NetworkLayer */,
 				DDE0A38E2B4C7FF000F07F14 /* Helpers */,
 				DD8AE46C2B4DBCE1004BC0C1 /* Home */,
 				DDE0A3882B4C7F2600F07F14 /* Register */,
