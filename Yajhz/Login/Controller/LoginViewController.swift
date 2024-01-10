@@ -32,8 +32,14 @@ class LoginViewController: UIViewController {
     }
     
     func loginValidation(){
-        HelperFuction.checkEmptyText(controller: self, textField: emailTF, popupMsg: "Please enter your email")
-        HelperFuction.checkEmptyText(controller: self, textField: passwordTF, popupMsg: "Please enter your password")
+        guard emailTF.text != "" else {
+            self.makeOkAlert(title: "", SubTitle:  "Please enter your email", Image: UIImage())
+            return
+        }
+        guard passwordTF.text != "" else {
+            self.makeOkAlert(title: "", SubTitle: "Please enter your password", Image: UIImage())
+            return
+        }    
         login()
     }
     

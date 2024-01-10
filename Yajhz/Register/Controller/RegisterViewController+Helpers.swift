@@ -18,6 +18,11 @@ extension RegisterViewController{
             self.makeOkAlert(title: "", SubTitle:  "Please enter your name", Image: UIImage())
             return
         }
+        guard emailTF.text != "" else {
+            self.makeOkAlert(title: "", SubTitle: "Please enter your email", Image: UIImage())
+            return
+        }
+
         guard PhoneTF.text != "" else {
             self.makeOkAlert(title: "", SubTitle: "Please enter your phone", Image: UIImage())
             return

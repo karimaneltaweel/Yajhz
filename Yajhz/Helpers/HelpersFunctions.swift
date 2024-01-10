@@ -8,14 +8,7 @@
 import Foundation
 import UIKit
 
-class HelperFuction{
-    static func checkEmptyText(controller:UIViewController,textField:UITextField,popupMsg:String){
-        guard textField.text != "" else {
-            controller.makeOkAlert(title: "", SubTitle: popupMsg, Image: UIImage())
-            return
-        }
-    }
-    
+class HelperFuction{    
     static func pushViewControllerInSameStoryboard(withIdentifier identifier: String, from viewController: UIViewController) {
         let nextViewController = viewController.storyboard?.instantiateViewController(withIdentifier: identifier)
         viewController.navigationController?.pushViewController(nextViewController!, animated: true)

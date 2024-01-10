@@ -121,8 +121,8 @@ extension UIViewController{
     func makeDoneAlert(title: String, SubTitle: String, Image : UIImage) {
         let alert = CDAlertView(title: title, message: SubTitle, type: .notification)
         let doneAction = CDAlertViewAction(title: NSLocalizedString("Done", comment: ""))
-        alert.circleFillColor = UIColor.YellowColor
-        doneAction.buttonTextColor = UIColor.YellowColor
+        alert.circleFillColor = UIColor.primaryGreenColor
+        doneAction.buttonTextColor = UIColor.primaryGreenColor
         alert.add(action: doneAction)
         alert.show()
     }
@@ -130,8 +130,8 @@ extension UIViewController{
     func makeOkAlert(title: String, SubTitle: String, Image : UIImage) {
         let alert = CDAlertView(title: title, message: SubTitle, type: .notification)
         let doneAction = CDAlertViewAction(title: NSLocalizedString("Ok", comment: ""))
-        alert.circleFillColor = UIColor.YellowColor
-        doneAction.buttonTextColor = UIColor.YellowColor
+        alert.circleFillColor = UIColor.primaryGreenColor
+        doneAction.buttonTextColor = UIColor.primaryGreenColor
         alert.add(action: doneAction)
         alert.show()
     }
@@ -139,7 +139,7 @@ extension UIViewController{
     func makeTrueAlert(title: String, SubTitle: String, Image : UIImage) {
         let alert = CDAlertView(title: title, message: SubTitle, type: .success)
         let doneAction = CDAlertViewAction(title: NSLocalizedString("Done", comment: ""))
-        alert.circleFillColor = UIColor.YellowColor
+        alert.circleFillColor = UIColor.primaryGreenColor
         alert.add(action: doneAction)
         alert.show()
     }
@@ -147,7 +147,7 @@ extension UIViewController{
         let alert = CDAlertView(title: title, message: SubTitle, type: .success)
         let logiAction = CDAlertViewAction(title: "Login")
         let cancilction = CDAlertViewAction(title: "Cancel")
-        alert.circleFillColor = UIColor.YellowColor
+        alert.circleFillColor = UIColor.primaryGreenColor
         alert.add(action: logiAction)
         alert.add(action: cancilction)
         alert.show()

@@ -137,7 +137,7 @@
                                                                         <rect key="frame" x="5" y="0.0" width="348" height="56"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="16"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">

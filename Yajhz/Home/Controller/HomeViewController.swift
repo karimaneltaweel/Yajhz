@@ -17,14 +17,17 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var userNameLB: UILabel!
     @IBOutlet weak var locationLB: UILabel!
-    //----------------------------------
+    //---------------home data-------------------
     var categoryData:HomeCategories?
     var popularData:HomePopular?
     var trandingData:HomeTranding?
-    
+    //------navigation buttons------------
+    let cartBT = UIButton()
+    let listBT = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationAppearence()
+        navigationItem.title = "Home"
     }
     
     override func viewWillAppear(_ animated: Bool) {
