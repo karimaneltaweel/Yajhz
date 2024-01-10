@@ -49,7 +49,7 @@ extension RegisterViewController{
     
     func nameLimit(){
         guard nameTF.text?.count ?? 0 >= 14 else {
-            makeOkAlert(title: "user name must be at least q4 characters", SubTitle: "", Image: UIImage())
+            makeOkAlert(title: "user name must be at least 14 characters", SubTitle: "", Image: UIImage())
             return
         }
         phoneLimit()
