@@ -56,6 +56,11 @@
 		DDE90B0E2B4DF176009779AF /* alertDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B042B4DF176009779AF /* alertDone.swift */; };
 		DDE90B0F2B4DF176009779AF /* DoneAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B052B4DF176009779AF /* DoneAlert.swift */; };
 		DDE90B102B4DF176009779AF /* DoneAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE90B062B4DF176009779AF /* DoneAlert.storyboard */; };
+		DDE90B122B4E0FBB009779AF /* LoginViewController+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B112B4E0FBB009779AF /* LoginViewController+API.swift */; };
+		DDE90B142B4E1399009779AF /* HelpersFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B132B4E1399009779AF /* HelpersFunctions.swift */; };
+		DDE90B172B4E1515009779AF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B162B4E1515009779AF /* RegisterViewController.swift */; };
+		DDE90B192B4E16AD009779AF /* RegisterViewController+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B182B4E16AD009779AF /* RegisterViewController+API.swift */; };
+		DDE90B1B2B4E16BE009779AF /* RegisterViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE90B1A2B4E16BE009779AF /* RegisterViewController+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +117,11 @@
 		DDE90B042B4DF176009779AF /* alertDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertDone.swift; sourceTree = "<group>"; };
 		DDE90B052B4DF176009779AF /* DoneAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneAlert.swift; sourceTree = "<group>"; };
 		DDE90B062B4DF176009779AF /* DoneAlert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoneAlert.storyboard; sourceTree = "<group>"; };
+		DDE90B112B4E0FBB009779AF /* LoginViewController+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+API.swift"; sourceTree = "<group>"; };
+		DDE90B132B4E1399009779AF /* HelpersFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersFunctions.swift; sourceTree = "<group>"; };
+		DDE90B162B4E1515009779AF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DDE90B182B4E16AD009779AF /* RegisterViewController+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+API.swift"; sourceTree = "<group>"; };
+		DDE90B1A2B4E16BE009779AF /* RegisterViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +339,7 @@
 		DDE0A3882B4C7F2600F07F14 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				DDE90B152B4E14FA009779AF /* Controller */,
 				DDE0A3892B4C7F3600F07F14 /* View */,
 			);
 			path = Register;
@@ -349,6 +360,7 @@
 				DDE0A3912B4C808500F07F14 /* DesignableView.swift */,
 				DDE0A38F2B4C801E00F07F14 /* DesignableTextField.swift */,
 				DDE0A3932B4C816B00F07F14 /* ColorsExt.swift */,
+				DDE90B132B4E1399009779AF /* HelpersFunctions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -357,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE0A3982B4C8A8900F07F14 /* LoginViewController.swift */,
+				DDE90B112B4E0FBB009779AF /* LoginViewController+API.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +421,16 @@
 				DDE90B062B4DF176009779AF /* DoneAlert.storyboard */,
 			);
 			path = DoneAlert;
+			sourceTree = "<group>";
+		};
+		DDE90B152B4E14FA009779AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDE90B162B4E1515009779AF /* RegisterViewController.swift */,
+				DDE90B182B4E16AD009779AF /* RegisterViewController+API.swift */,
+				DDE90B1A2B4E16BE009779AF /* RegisterViewController+Helpers.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,10 +577,13 @@
 				DDE90B072B4DF176009779AF /* Alert.swift in Sources */,
 				DD0BE4F92B4DD20A00C31E0C /* Request.swift in Sources */,
 				DDE90AF32B4DEC02009779AF /* Services.swift in Sources */,
+				DDE90B1B2B4E16BE009779AF /* RegisterViewController+Helpers.swift in Sources */,
 				DDE0A3752B4C7EF300F07F14 /* SceneDelegate.swift in Sources */,
+				DDE90B172B4E1515009779AF /* RegisterViewController.swift in Sources */,
 				DD0BE5102B4DD67800C31E0C /* TrandingNowTableViewCell.swift in Sources */,
 				DDE0A3922B4C808500F07F14 /* DesignableView.swift in Sources */,
 				DD0BE5142B4DD93E00C31E0C /* PopularNowTableViewCell+CollectionDelegates.swift in Sources */,
+				DDE90B142B4E1399009779AF /* HelpersFunctions.swift in Sources */,
 				DDE90B0E2B4DF176009779AF /* alertDone.swift in Sources */,
 				DD0BE50C2B4DD64E00C31E0C /* CategoriesTableViewCell.swift in Sources */,
 				DD0BE5072B4DD60100C31E0C /* HomeViewController+TableDelegates.swift in Sources */,
@@ -565,9 +591,11 @@
 				DD0BE5222B4DDCBE00C31E0C /* HeaderTableViewCell.swift in Sources */,
 				DD0BE4EF2B4DC68000C31E0C /* TrendingCollectionViewCell.swift in Sources */,
 				DD8AE4752B4DBE97004BC0C1 /* PopularCollectionViewCell.swift in Sources */,
+				DDE90B192B4E16AD009779AF /* RegisterViewController+API.swift in Sources */,
 				DDE0A3902B4C801E00F07F14 /* DesignableTextField.swift in Sources */,
 				DD0BE5122B4DD91C00C31E0C /* CategoriesTableViewCell+CollectionDelegate.swift in Sources */,
 				DDE90AF62B4DED80009779AF /* HomeModel.swift in Sources */,
+				DDE90B122B4E0FBB009779AF /* LoginViewController+API.swift in Sources */,
 				DDE0A3942B4C816B00F07F14 /* ColorsExt.swift in Sources */,
 				DD0BE5092B4DD61400C31E0C /* HomeViewController+Helpers.swift in Sources */,
 				DD0BE5162B4DD95A00C31E0C /* TrandingNowTableViewCell+CollectionDelegates.swift in Sources */,

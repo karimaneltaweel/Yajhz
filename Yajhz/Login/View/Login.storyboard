@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8W5-FA-4ms">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WY0-0z-B0v">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -202,6 +202,9 @@
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginPressed:" destination="8W5-FA-4ms" eventType="touchUpInside" id="CXC-Vo-MSd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBh-eF-jO2">
                                                 <rect key="frame" x="93.666666666666686" y="444" width="206" height="35"/>
@@ -238,6 +241,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signupPressed:" destination="8W5-FA-4ms" eventType="touchUpInside" id="pap-bS-w2U"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -276,7 +282,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="IYt-f7-nsV"/>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yajhz Brand-02 1" translatesAutoresizingMaskIntoConstraints="NO" id="KvB-pi-hcU">
-                                <rect key="frame" x="116.66666666666669" y="89" width="160" height="204"/>
+                                <rect key="frame" x="116.66666666666669" y="133" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="BRQ-cr-bTc"/>
                                 </constraints>
@@ -299,11 +305,31 @@
                             <constraint firstItem="bNi-0p-h83" firstAttribute="top" secondItem="I9T-ry-fSK" secondAttribute="top" id="zod-KU-x7r"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2Em-Eg-WiV"/>
                     <connections>
-                        <outlet property="loginView" destination="rMB-c0-cnG" id="Slp-Ms-ZmB"/>
+                        <outlet property="emailTF" destination="zaN-am-Hxn" id="C3e-3m-gPF"/>
+                        <outlet property="passwordTF" destination="eBU-az-RAq" id="l44-4F-gCi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us7-dn-lRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2366412213739" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zqA-97-8da">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WY0-0z-B0v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ipX-Yr-eKC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8W5-FA-4ms" kind="relationship" relationship="rootViewController" id="N92-23-FXS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpN-ZR-ZYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872.51908396946567" y="-2.1126760563380285"/>
         </scene>

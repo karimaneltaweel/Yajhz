@@ -18,7 +18,6 @@ extension PopularNowTableViewCell:UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularCollectionViewCell", for: indexPath) as! PopularCollectionViewCell
         cell.setUp(popular: popularData?.data?[indexPath.row] ?? Datum())
         //----------------
-        
         cell.favPressed = {
             self.favPressed?(indexPath.row)
         }

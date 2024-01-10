@@ -32,4 +32,12 @@ class URLs {
     func getUserProfile() -> String {
         url + "/client-profile"
     }
+    
+    func login() -> String {
+        url + "/login"
+    }
+    
+    func register() -> String {
+        url + "/client-register"
+    }
 }

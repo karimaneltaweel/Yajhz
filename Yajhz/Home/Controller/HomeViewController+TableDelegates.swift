@@ -29,8 +29,7 @@ extension HomeViewController:UITableViewDelegate, UITableViewDataSource{
             cell.popularData = popularData
             
             cell.favPressed = { [unowned self] index in
-                favourite(productId: String(popularData?.data?[index].id ?? 0))
-                cell.popularCollection.reloadData()
+                favourite(productId: "\(popularData?.data?[index].id ?? 0)")
             }
             cell.popularCollection.reloadData()
             return cell
